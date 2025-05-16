@@ -117,25 +117,7 @@ body {
 
 }
 
-.header-menu {
-    position: relative;
-    cursor: pointer;
-    padding-top: 10px;
-}
 
-.header-menu ul {
-    list-style-type: none;
-    display: flex;
-    width: 600px;
-    justify-content: space-between;
-
-}
-
-.header-menu ul li {
-    color: #990066;
-    font-size: clamp(0.8rem, 2vw, 1.1rem);
-
-}
 
 .header-btn button {
     color: white;
@@ -833,7 +815,7 @@ input::placeholder {
 }
 
 
-.faq p{
+.faq p {
     color: #990066;
     text-align: center;
     font-size: 32px;
@@ -896,3 +878,100 @@ input::placeholder {
 .faq-item.active .arrow {
     transform: rotate(180deg);
 }
+
+
+.header-menu {
+    position: relative;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.header-menu ul {
+    list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 0;
+  /* margin: 0; */
+
+}
+
+.header-menu ul li {
+    position: relative;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    color: #990066;
+    /* font-size: clamp(0.8rem, 2vw, 1.1rem); */
+
+}
+.header-menu ul li a{
+    color: #990066;
+
+}
+.header-menud a {
+    text-decoration: none;
+    color: #990066;
+    padding: 10px 15px;
+    display: block;
+  }
+.nav-dropdown{
+    /* flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 200px !important;
+    gap: 5px;
+    padding: 0px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    display: none !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+}
+.nav-dropdown li{
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid #eee;
+
+}
+.nav-dropdown li:hover{
+    background-color: #75004E;
+}
+.nav-dropdown li:hover a{
+    color: white !important;
+}
+.nav-dropdown li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+  }
+  .nav-list{
+    position:  relative !important;
+  }
+/* Show dropdown on hover */
+.nav-list:hover .nav-dropdown {
+    display: block !important;
+  }
+  .nav-arrow {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    right: -23%;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #990066;
+    border-bottom: 2px solid #990066;
+    transform: rotate(45deg);
+    margin-top: -15px;
+    transition: transform 0.3s ease;
+  }
+  .nav-list:hover .nav-arrow {
+    transform: rotate(-135deg);
+  }
+
+
+
+
