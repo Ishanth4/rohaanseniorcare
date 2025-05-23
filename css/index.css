@@ -1260,6 +1260,12 @@ input::placeholder {
 
     .abt-mobile-img{
         display: block;
+        /* width: 330px;
+        height: 334px; */
+        padding-bottom: 15px;
+    }
+
+    .abt-mobile-img .img1{
         width: 330px;
         height: 334px;
     }
