@@ -229,6 +229,10 @@ body {
     width: 800px;
 }
 
+.abt-mobile-img{
+    display: none;
+}
+
 .banner-btn button {
     color: #FFFF66;
     background-color: #75004E;
@@ -1252,6 +1256,12 @@ input::placeholder {
         font-size: 14px;
         text-align: center;
         width: auto;
+    }
+
+    .abt-mobile-img{
+        display: block;
+        width: 330px;
+        height: 334px;
     }
 
     .banner-btn button {
